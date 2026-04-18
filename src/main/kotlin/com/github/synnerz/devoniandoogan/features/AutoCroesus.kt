@@ -232,6 +232,7 @@ object AutoCroesus : Feature(
             lastPage = page
             slotToClick = 53
             quePage = page + 1
+            logger.add("queuing next page $quePage-$lastPage")
             return
         }
 
