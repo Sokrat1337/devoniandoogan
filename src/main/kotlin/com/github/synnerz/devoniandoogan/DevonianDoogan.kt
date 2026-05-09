@@ -11,6 +11,7 @@ import com.github.synnerz.devoniandoogan.features.AutoCroesus
 import com.github.synnerz.devoniandoogan.features.AutoRefill
 import com.github.synnerz.devoniandoogan.features.AutoSell
 import com.github.synnerz.devoniandoogan.features.AvoidBreakingSecrets
+import com.github.synnerz.devoniandoogan.features.BestiaryESP
 import com.github.synnerz.devoniandoogan.features.NoRotate
 import com.github.synnerz.devoniandoogan.features.TrevorESP
 import com.github.synnerz.devoniandoogan.features.ZeroPingDB
@@ -83,5 +84,6 @@ object DevonianDoogan : ClientModInitializer {
 		Devonian.addFeatureInstance(TrevorESP)
 		Devonian.addFeatureInstance(NoRotate)
 		Devonian.addFeatureInstance(AutoCroesus)
+		Devonian.addFeatureInstance(BestiaryESP)
 	}
 }

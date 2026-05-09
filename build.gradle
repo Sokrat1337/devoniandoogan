@@ -27,7 +27,7 @@ dependencies {
 
 //	modApi("maven.modrinth:devonian:1.18.8-1.21.10")
 	// TODO: remove once modrinth is updated
-	modApi(files("libs/devonian-1.18.8.jar"))
+	modApi(files("libs/devonian-1.23.9.jar"))
 }
 
 processResources {
