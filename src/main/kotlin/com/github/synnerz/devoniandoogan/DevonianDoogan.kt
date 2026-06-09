@@ -7,9 +7,7 @@ import com.github.synnerz.devonian.features.dungeons.clear.BoxStarMob
 import com.github.synnerz.devonian.features.dungeons.map.DungeonMap
 import com.github.synnerz.devoniandoogan.features.AutoCloseChest
 import com.github.synnerz.devoniandoogan.features.AutoCombine
-import com.github.synnerz.devoniandoogan.features.AutoCroesus
 import com.github.synnerz.devoniandoogan.features.AutoRefill
-import com.github.synnerz.devoniandoogan.features.AutoSell
 import com.github.synnerz.devoniandoogan.features.AvoidBreakingSecrets
 import com.github.synnerz.devoniandoogan.features.BestiaryESP
 import com.github.synnerz.devoniandoogan.features.NoRotate
@@ -17,14 +15,14 @@ import com.github.synnerz.devoniandoogan.features.TrevorESP
 import com.github.synnerz.devoniandoogan.features.ZeroPingDB
 import net.fabricmc.api.ClientModInitializer
 import net.minecraft.client.KeyMapping
-import net.minecraft.resources.ResourceLocation
+import net.minecraft.resources.Identifier
 import org.slf4j.LoggerFactory
 
 object DevonianDoogan : ClientModInitializer {
     private val logger = LoggerFactory.getLogger("devoniandoogan")
 	val keybindCategory by lazy {
 		KeyMapping.Category.register(
-			ResourceLocation.fromNamespaceAndPath(
+            Identifier.fromNamespaceAndPath(
 				"devoniandoogan",
 				"keybinds"
 			)
@@ -75,7 +73,6 @@ object DevonianDoogan : ClientModInitializer {
 			}
 		})
 
-		Devonian.addFeatureInstance(AutoSell)
 		Devonian.addFeatureInstance(AutoCombine)
 		Devonian.addFeatureInstance(AutoRefill)
 		Devonian.addFeatureInstance(AutoCloseChest)
@@ -83,7 +80,6 @@ object DevonianDoogan : ClientModInitializer {
 		Devonian.addFeatureInstance(ZeroPingDB)
 		Devonian.addFeatureInstance(TrevorESP)
 		Devonian.addFeatureInstance(NoRotate)
-		Devonian.addFeatureInstance(AutoCroesus)
 		Devonian.addFeatureInstance(BestiaryESP)
 	}
 }
