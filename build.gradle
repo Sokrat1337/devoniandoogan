@@ -1,3 +1,7 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
+import java.time.Instant
+
 plugins {
 	id "net.fabricmc.fabric-loom" version "${loom_version}"
 	id "maven-publish"
